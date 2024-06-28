@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-blue: rgb(70, 103, 134);
+  --color-red: rgba(218, 58, 58, 0.74);
+  --color-background: rgba(82, 196, 82, 0.705);
+  --color-shadow: rgba(0, 0, 0, 0.514);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: var(--color-background);
+  height: 100%;
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: 3rem;
+  box-shadow: 10px 20px 20px 12px var(--color-shadow);
+  border-radius: 14px;
+}
+
+.card > header > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dot {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 0.5rem;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: var(--color-blue);
+  visibility: hidden;
+}
+
+#tooltip > hr {
+  margin: 2px 0 4px 0;
+}
+
+#tooltip > p {
+  margin-top: 8px;
+}
+
+.card > .info {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+#legend {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#legend div {
+  display: inline-block;
+  margin: 0 10px;
+}
